@@ -1,9 +1,8 @@
-
 spring:
   datasource:
-    url: jdbc:mysql://sql12.freesqldatabase.com:3306/sql12788181
-    username: sql12788181
-    password: a2B8HhtBbU
+    url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -11,5 +10,6 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+
 server:
   port: 8080
