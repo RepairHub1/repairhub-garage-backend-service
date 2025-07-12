@@ -1,6 +1,6 @@
-spring:
+lspring:
   datasource:
-    url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}?useSSL=false
     username: ${DB_USER}
     password: ${DB_PASSWORD}
   jpa:
